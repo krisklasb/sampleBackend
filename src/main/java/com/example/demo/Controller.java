@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
 
+    //Authentication Prozess im Hintergrund gibt bei alles ok 200 oder bei nicht ok 401. Deshalb muss die jwt validierungs Logik eig. in keinen Endpoint
+    //Hier würde also ausreichen die Rollen des Users zurückzugeben
     @GetMapping("/checkAccess")
     ResponseEntity<String> checkAccess() {
         return new ResponseEntity<>("", HttpStatus.OK);
