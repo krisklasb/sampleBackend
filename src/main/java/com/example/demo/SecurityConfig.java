@@ -30,6 +30,13 @@ public class SecurityConfig {
         return http.build();
     }
 
+/*
+ // Actuator endpoints run on separate port:
+                        .requestMatchers("/actuator/**").permitAll()
+                        .requestMatchers("/static/**").permitAll()
+                        Diese 2 Endpoints fürs deployment permitten
+    */
+
     @Bean
     public CustomJwtAuthenticationConverter customJwtAuthenticationConverter() {
         return new CustomJwtAuthenticationConverter();
