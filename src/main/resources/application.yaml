@@ -6,3 +6,4 @@ spring:
           #issuer-uri: https://sts.windows.net/{TENANT_ID}/
           #audiences: ${CLIENT_ID}
           #jwk-set-uri: https://login.microsoftonline.com/common/discovery/keys //Höchst wahrscheinlich muss die jwk uri nicht angegeben werden
+          #TENANT_ID + CLIENT_ID müssen noch in values.yaml eingeplegt werden
